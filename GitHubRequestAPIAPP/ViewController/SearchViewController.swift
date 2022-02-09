@@ -27,6 +27,7 @@ class SearchViewController: UIViewController {
         didSet{
             iconLabel.text = "GitHub"
             iconLabel.textColor = .white
+            iconLabel.adjustsFontSizeToFitWidth = true
         }
     }
     
