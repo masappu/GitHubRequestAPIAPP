@@ -9,6 +9,36 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet private weak var backGroundView: UIView!{
+        didSet{
+            backGroundView.backgroundColor = .black
+        }
+    }
+    
+    @IBOutlet private weak var searchButton: UIButton!{
+        didSet{
+            searchButton.titleLabel?.textColor = .white
+            searchButton.backgroundColor = .darkGray
+            searchButton.layer.cornerRadius = 5
+        }
+    }
+    
+    @IBOutlet  private weak var iconLabel: UILabel!{
+        didSet{
+            iconLabel.text = "GitHub"
+            iconLabel.textColor = .white
+        }
+    }
+    
+    @IBOutlet private weak var textField: UITextField!{
+        didSet{
+            textField.placeholder = "リポジトリ検索"
+            textField.delegate = self
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +46,20 @@ class SearchViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func pushSearchButton(_ sender: Any) {
     }
-    */
+    
+}
 
+extension SearchViewController:UITextFieldDelegate{
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.textField.endEditing(true)
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 }
