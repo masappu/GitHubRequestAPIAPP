@@ -16,6 +16,8 @@
 		87FDAB2927B441C100F786CF /* RepositoryListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDAB2827B441C100F786CF /* RepositoryListsViewController.swift */; };
 		87FDAB2D27B4424900F786CF /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDAB2B27B4424900F786CF /* RepositoryCell.swift */; };
 		87FDAB2E27B4424900F786CF /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87FDAB2C27B4424900F786CF /* RepositoryCell.xib */; };
+		87FDAB3227B4F86800F786CF /* RepositoryListsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDAB3127B4F86800F786CF /* RepositoryListsPresenter.swift */; };
+		87FDAB3427B4F88000F786CF /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDAB3327B4F88000F786CF /* SearchPresenter.swift */; };
 		EE8893167E48B7A8C916BD21 /* Pods_GitHubRequestAPIAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0C0729DF58BB4BA3800373 /* Pods_GitHubRequestAPIAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		87FDAB2827B441C100F786CF /* RepositoryListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListsViewController.swift; sourceTree = "<group>"; };
 		87FDAB2B27B4424900F786CF /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
 		87FDAB2C27B4424900F786CF /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
+		87FDAB3127B4F86800F786CF /* RepositoryListsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListsPresenter.swift; sourceTree = "<group>"; };
+		87FDAB3327B4F88000F786CF /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +112,8 @@
 		87FDAB2427B4403300F786CF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				87FDAB2627B4414000F786CF /* SearchViewController.swift */,
-				87FDAB2827B441C100F786CF /* RepositoryListsViewController.swift */,
+				87FDAB3027B4F83700F786CF /* RepositoryListsViewController */,
+				87FDAB2F27B4F82300F786CF /* SearchViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -130,6 +134,24 @@
 				87FDAB2C27B4424900F786CF /* RepositoryCell.xib */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		87FDAB2F27B4F82300F786CF /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				87FDAB2627B4414000F786CF /* SearchViewController.swift */,
+				87FDAB3327B4F88000F786CF /* SearchPresenter.swift */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		87FDAB3027B4F83700F786CF /* RepositoryListsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				87FDAB2827B441C100F786CF /* RepositoryListsViewController.swift */,
+				87FDAB3127B4F86800F786CF /* RepositoryListsPresenter.swift */,
+			);
+			path = RepositoryListsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +274,9 @@
 				87FDAB1027B3EA4200F786CF /* AppDelegate.swift in Sources */,
 				87FDAB2D27B4424900F786CF /* RepositoryCell.swift in Sources */,
 				87FDAB1227B3EA4200F786CF /* SceneDelegate.swift in Sources */,
+				87FDAB3227B4F86800F786CF /* RepositoryListsPresenter.swift in Sources */,
 				87FDAB2727B4414000F786CF /* SearchViewController.swift in Sources */,
+				87FDAB3427B4F88000F786CF /* SearchPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
