@@ -37,21 +37,27 @@
                         </constraints>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bq-is-pox">
-                        <rect key="frame" x="50" y="72" width="280" height="50"/>
+                        <rect key="frame" x="30" y="72" width="260" height="50"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repositori fullName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK4-2B-phS">
-                                <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="50"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="link" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YdD-Yy-Y1X">
-                                <rect key="frame" x="250" y="-0.5" width="30" height="51"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-cs-3au">
+                                <rect key="frame" x="230" y="0.0" width="30" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="A6e-9A-2Zr"/>
+                                    <constraint firstAttribute="width" constant="30" id="wLA-IP-LIf"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="iYM-o1-ooy"/>
@@ -83,8 +89,8 @@
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repositori description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVO-76-IxV">
-                        <rect key="frame" x="50" y="152" width="280" height="52"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repositori description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVO-76-IxV">
+                        <rect key="frame" x="30" y="152" width="300" height="52"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -94,14 +100,14 @@
                     <constraint firstItem="Qh0-zf-kKV" firstAttribute="top" secondItem="2bq-is-pox" secondAttribute="bottom" id="11J-3I-UTR"/>
                     <constraint firstItem="ueX-Tx-Vi9" firstAttribute="centerY" secondItem="PUT-Qy-RuP" secondAttribute="centerY" id="Eqc-XQ-vkH"/>
                     <constraint firstItem="AzY-5G-hAv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="FH8-mr-68O"/>
-                    <constraint firstItem="2bq-is-pox" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="30" id="Jdx-ko-icX"/>
+                    <constraint firstItem="2bq-is-pox" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Jdx-ko-icX"/>
                     <constraint firstItem="2bq-is-pox" firstAttribute="top" secondItem="AzY-5G-hAv" secondAttribute="bottom" id="NcF-Ku-ZWm"/>
-                    <constraint firstItem="xVO-76-IxV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="30" id="QGL-f4-0do"/>
+                    <constraint firstItem="xVO-76-IxV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="QGL-f4-0do"/>
                     <constraint firstItem="PUT-Qy-RuP" firstAttribute="leading" secondItem="Qh0-zf-kKV" secondAttribute="trailing" constant="20" id="X6g-qz-0dh"/>
                     <constraint firstItem="AzY-5G-hAv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Xcn-mu-huB"/>
                     <constraint firstAttribute="bottomMargin" secondItem="xVO-76-IxV" secondAttribute="bottom" constant="5" id="aLB-Nz-u54"/>
                     <constraint firstAttribute="trailing" secondItem="AzY-5G-hAv" secondAttribute="trailing" constant="20" id="bSS-Uj-X6I"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="2bq-is-pox" secondAttribute="trailing" id="cN2-BZ-JhD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2bq-is-pox" secondAttribute="trailing" constant="40" id="cN2-BZ-JhD"/>
                     <constraint firstItem="ueX-Tx-Vi9" firstAttribute="leading" secondItem="PUT-Qy-RuP" secondAttribute="trailing" constant="5" id="hug-q1-WCh"/>
                     <constraint firstItem="PUT-Qy-RuP" firstAttribute="centerY" secondItem="Qh0-zf-kKV" secondAttribute="centerY" id="rOP-6m-nFw"/>
                     <constraint firstItem="Qh0-zf-kKV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="30" id="tEJ-d4-Af6"/>
@@ -110,7 +116,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="158" y="163"/>
+            <connections>
+                <outlet property="copyUrlButton" destination="nOw-cs-3au" id="pLb-Ws-gUv"/>
+                <outlet property="iconImage" destination="qii-qR-psb" id="TiO-Ld-COP"/>
+                <outlet property="languageLabel" destination="Qh0-zf-kKV" id="aWd-Ce-RDl"/>
+                <outlet property="ownerNameLabel" destination="tun-fS-4N6" id="NgI-NS-7qd"/>
+                <outlet property="repositoryDescriptionLabel" destination="xVO-76-IxV" id="1Ah-0K-gDP"/>
+                <outlet property="repositoryNameLabel" destination="KK4-2B-phS" id="YO3-rc-rDn"/>
+                <outlet property="starCountLabel" destination="ueX-Tx-Vi9" id="etW-rW-kDC"/>
+                <outlet property="starIconImage" destination="PUT-Qy-RuP" id="mh5-dg-y5f"/>
+            </connections>
+            <point key="canvasLocation" x="12" y="165"/>
         </tableViewCell>
     </objects>
     <resources>

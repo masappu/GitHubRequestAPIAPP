@@ -58,7 +58,7 @@ final class SearchPresenter:SearchPresenterInput{
         if !text.isEmpty{
             self.view.transitionToRepositoryListsVC(text: text)
         }else{
-            let title = "検索ワードが空です"
+            let title = "検索ワードが空です。"
             let message = "検索ワードを入力してください。"
             self.view.showAlert(title: title, message: message)
         }
