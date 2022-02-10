@@ -16,6 +16,8 @@ class RepositoryListsViewController: UIViewController {
         }
     }
     
+    var searchText:String?
+    
     
 
     override func viewDidLoad() {
