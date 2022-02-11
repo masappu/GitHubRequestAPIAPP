@@ -36,7 +36,7 @@ protocol SearchPresenterOutput{
     func transitionToRepositoryListsVC(text:String)
     
     //アラート表示を指示する
-    func showAlert(title: String,message: String)
+    func showErrorTextIsEmpty(title: String,message: String)
     
 }
 
@@ -48,19 +48,23 @@ final class SearchPresenter:SearchPresenterInput{
     }
     
     func loadView() {
+  
         self.view.setBackGroundViewInfo()
         self.view.setSearchButtonInfo()
         self.view.setIconLabelInfo()
         self.view.setTextFieldInfo()
+    
     }
     
     func pushSearchButton(text: String) {
+    
         if !text.isEmpty{
             self.view.transitionToRepositoryListsVC(text: text)
         }else{
             let title = "検索ワードが空です。"
             let message = "検索ワードを入力してください。"
-            self.view.showAlert(title: title, message: message)
+            self.view.showErrorTextIsEmpty(title: title, message: message)
         }
+        
     }
 }
