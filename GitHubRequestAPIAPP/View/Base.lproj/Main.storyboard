@@ -73,14 +73,14 @@
                         <outlet property="iconLabel" destination="4a7-wB-e2x" id="ZlI-52-c2d"/>
                         <outlet property="searchButton" destination="1yr-ao-cU4" id="Fa4-gN-GK8"/>
                         <outlet property="textField" destination="xkQ-MT-UBl" id="ACI-K3-r78"/>
-                        <segue destination="BkZ-CA-Y7f" kind="show" id="t9f-t4-FRP"/>
+                        <segue destination="BkZ-CA-Y7f" kind="show" identifier="toRepositoryListsVC" id="t9f-t4-FRP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1839.1304347826087" y="83.705357142857139"/>
         </scene>
-        <!--Repository Lists View Controller-->
+        <!--Repository-->
         <scene sceneID="OIr-W2-6kF">
             <objects>
                 <viewController storyboardIdentifier="repositoryListsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BkZ-CA-Y7f" customClass="RepositoryListsViewController" customModule="GitHubRequestAPIAPP" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,6 +91,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ryd-v2-dKQ">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hc4-zK-CZI"/>
@@ -102,7 +103,7 @@
                             <constraint firstAttribute="bottom" secondItem="ryd-v2-dKQ" secondAttribute="bottom" id="spB-WH-Ucf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6La-CK-0Kw"/>
+                    <navigationItem key="navigationItem" title="Repository" id="6La-CK-0Kw"/>
                     <connections>
                         <outlet property="tableView" destination="ryd-v2-dKQ" id="tbu-EN-3gl"/>
                     </connections>
