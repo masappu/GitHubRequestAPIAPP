@@ -38,7 +38,7 @@ class RepositoryCell: UITableViewCell {
     func configure(repository: Repository) {
         
         ownerNameLabel.text = repository.owner.login
-        repositoryNameLabel.text = repository.full_name
+        repositoryNameLabel.text = repository.name
         languageLabel.text = "● \(repository.language ?? "---")"
         starCountLabel.text = "\(repository.stargazers_count)"
         repositoryDescriptionLabel.text = repository.description ?? ""

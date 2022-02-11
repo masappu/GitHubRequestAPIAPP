@@ -22,7 +22,7 @@ struct Repositories: Codable {
 }
 
 struct Repository: Codable {
-    let full_name: String
+    let name: String
     let html_url: String
     let language: String?
     let stargazers_count: Int
