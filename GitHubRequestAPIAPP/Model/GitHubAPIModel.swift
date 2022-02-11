@@ -53,11 +53,9 @@ final class GitHubAPIMode{
             guard let safeData = data else { return }
 
             let decoder = JSONDecoder()
-//            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            
             do {
-                
                 let decodeData = try decoder.decode(Repositories.self, from: safeData)
-                
                 if !decodeData.items.isEmpty{
                     completionHandler(.success(decodeData.items))
                 }else{
@@ -67,6 +65,7 @@ final class GitHubAPIMode{
             } catch {
                 completionHandler(.failure(.parseError))
             }
+            
         }
         task.resume()
     }
